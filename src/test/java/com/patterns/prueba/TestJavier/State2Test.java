@@ -1,17 +1,13 @@
 package com.patterns.prueba.TestJavier;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import com.patterns.behavioral.state.state2.Device;
 import com.patterns.behavioral.state.state2.Off;
 import com.patterns.behavioral.state.state2.On;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static  org.junit.jupiter.api.Assertions.*;
 
-public class State2Test {
+ class State2Test {
 
 
     @BeforeAll
@@ -52,9 +48,11 @@ public class State2Test {
     @Test
     @DisplayName("test de press button")
     void testPress(){
-        Device device = new Device(new Off());
-        device.setState(new On());
+        Off initialState = new Off();
+        Device device = new Device(initialState);
+
         device.pressButton();
+        assertTrue(device.getState() != initialState);
     }
 
 }

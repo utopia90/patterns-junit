@@ -13,7 +13,7 @@ class WeatherTest {
     private WeatherType currentWeather;
     private List<WeatherObserver> observers;
 
-    @Test
+
     @BeforeEach
     void comienzo(){
         System.out.println("comienzo");
