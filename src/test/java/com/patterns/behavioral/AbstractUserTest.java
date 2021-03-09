@@ -4,6 +4,7 @@ import com.patterns.behavioral.mediator.AbstractUser;
 import com.patterns.behavioral.mediator.ChatMediator;
 import com.patterns.behavioral.mediator.Telegram;
 import com.patterns.behavioral.mediator.User;
+import org.junit.Assert;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -42,11 +43,11 @@ class AbstractUserTest {
         assertTrue(chat instanceof ChatMediator);
     }
 
-    @Test
+   /* @Test
     @DisplayName("comprobando recibe el mensaje ")
     @Disabled("FIX - mediator tests")
     void test5() {
-        assertEquals("Hola buenas!", user2);
-    }
+        user2.send("Hola buenas!");
+    }*/
 
 }
