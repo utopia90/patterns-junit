@@ -57,7 +57,7 @@ class BookShopTest {
 
         book = null;
         bookShop.addBook(book);
-        assertTrue(bookShop.getSize() == 0);
+        assertEquals(0, bookShop.getSize());
 
     }
 
