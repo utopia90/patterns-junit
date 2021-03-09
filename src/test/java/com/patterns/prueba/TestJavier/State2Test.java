@@ -52,7 +52,7 @@ import static  org.junit.jupiter.api.Assertions.*;
         Device device = new Device(initialState);
 
         device.pressButton();
-        assertTrue(device.getState() != initialState);
+        assertNotSame(device.getState(), initialState);
     }
 
 }
