@@ -43,6 +43,7 @@ class AbstractUserTest {
         assertTrue(chat instanceof ChatMediator);
     }
 
+    //We cant test it as user2.receive returns a SystemOutPrintln
    /* @Test
     @DisplayName("comprobando recibe el mensaje ")
     @Disabled("FIX - mediator tests")
