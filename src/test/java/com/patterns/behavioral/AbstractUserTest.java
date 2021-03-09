@@ -46,8 +46,7 @@ class AbstractUserTest {
     @DisplayName("comprobando recibe el mensaje ")
     @Disabled("FIX - mediator tests")
     void test5() {
-        String hola = "Hola buenas!";
-        assertEquals(hola, user2);
+        assertEquals("Hola buenas!", user2);
     }
 
 }
